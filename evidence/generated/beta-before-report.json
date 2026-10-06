@@ -7,7 +7,7 @@
       "endLine": 15,
       "startByte": 106,
       "endByte": 359,
-      "originalText": "pane_template name=\"topBar\" size=1 borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" size=1 borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar\n    children\n    bottomBar\n}\n"
+      "originalText": "pane_template name=\"topBar\" borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar size=1\n    children\n    bottomBar size=1\n}\n"
     },
     {
       "kind": "module",

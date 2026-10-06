@@ -59,6 +59,7 @@ function analyzeModule(module){
  if(!nodes.length)fail('empty-module');
  for(const node of nodes){
   if(!definitions.has(node.name))fail('module-must-contain-only-definitions');
+  if(node.name==='pane_template'&&(Object.hasOwn(node.props,'size')||node.children.some(c=>c.name==='size')))fail('template-size-must-be-on-use');
   const name=node.name==='default_tab_template'?'$default':node.props.name;
   if(name!=='$default'&&(!id(name)||reserved.has(name)))fail('invalid-template-name');
   if(node.name==='default_tab_template'&&Object.hasOwn(node.props,'name'))fail('named-default-not-supported');

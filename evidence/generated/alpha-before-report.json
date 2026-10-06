@@ -7,7 +7,7 @@
       "endLine": 15,
       "startByte": 106,
       "endByte": 359,
-      "originalText": "pane_template name=\"topBar\" size=1 borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" size=1 borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar\n    children\n    bottomBar\n}\n"
+      "originalText": "pane_template name=\"topBar\" borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar size=1\n    children\n    bottomBar size=1\n}\n"
     },
     {
       "kind": "module",
@@ -24,16 +24,16 @@
       "startLine": 25,
       "endLine": 30,
       "startByte": 552,
-      "endByte": 621,
-      "originalText": "tab_template name=\"devTab\" {\n    topBar\n    children\n    bottomBar\n}\n"
+      "endByte": 635,
+      "originalText": "tab_template name=\"devTab\" {\n    topBar size=1\n    children\n    bottomBar size=1\n}\n"
     },
     {
       "kind": "project",
       "id": "alpha",
       "startLine": 32,
       "endLine": 36,
-      "startByte": 640,
-      "endByte": 730,
+      "startByte": 654,
+      "endByte": 744,
       "originalText": "devTab name=\"Dev\" cwd=\"/work/alpha\" focus=true {\n    editorPane focus=true\n    testPane\n}\n"
     }
   ],

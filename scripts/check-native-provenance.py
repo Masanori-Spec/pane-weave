@@ -1,7 +1,7 @@
 """Read only Cargo-downloaded upstream sources; upload metadata, never code/binaries."""
 import json,hashlib,pathlib,subprocess,tomllib,shutil
 root=pathlib.Path(__file__).resolve().parent.parent
-metadata=json.loads(subprocess.check_output(['cargo','+1.98.1','metadata','--manifest-path',str(root/'native/Cargo.toml'),'--format-version','1']))
+metadata=json.loads(subprocess.check_output(['cargo','+1.98.1','metadata','--locked','--manifest-path',str(root/'native/Cargo.toml'),'--format-version','1']))
 pin=json.loads((root/'scripts/upstream-pin.json').read_text());matches=[p for p in metadata['packages'] if p['name']=='zellij-utils'];assert len(matches)==1
 package=matches[0];assert package['version']==pin['version'] and package['license']=='MIT';source=pathlib.Path(package['manifest_path']).parent
 vcs=json.loads((source/'.cargo_vcs_info.json').read_text());assert vcs['git']['sha1']==pin['commit'] and not vcs['git'].get('dirty',False),vcs

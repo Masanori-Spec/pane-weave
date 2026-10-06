@@ -1,14 +1,14 @@
 import fs from 'node:fs';import {build} from '../src/engine.mjs';
-const frames=`pane_template name="topBar" size=1 borderless=true {
+const frames=`pane_template name="topBar" borderless=true {
     plugin location="zellij:tab-bar"
 }
-pane_template name="bottomBar" size=1 borderless=true {
+pane_template name="bottomBar" borderless=true {
     plugin location="zellij:status-bar"
 }
 default_tab_template {
-    topBar
+    topBar size=1
     children
-    bottomBar
+    bottomBar size=1
 }
 `;
 const tools=`pane_template name="editorPane" command="nvim" {
@@ -19,9 +19,9 @@ pane_template name="testPane" command="make" {
 }
 `;
 const tabs=`tab_template name="devTab" {
-    topBar
+    topBar size=1
     children
-    bottomBar
+    bottomBar size=1
 }
 `;
 const manifest={schema:1,modules:[{id:'frames',kdl:frames},{id:'tools',kdl:tools},{id:'tabs',kdl:tabs}],projects:[

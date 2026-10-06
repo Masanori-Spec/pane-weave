@@ -2,7 +2,7 @@
 
 A bounded, offline assembler for explicitly supplied Zellij KDL fragments. Named pane/tab templates and an optional default-tab frame are combined with each project's declared modules into ordinary standalone `layout { … }` files. Original fragment text, command argument boundaries, and cwd strings are preserved in the output; source maps identify their origin.
 
-**This is a source-only feasibility checkpoint.** JavaScript assembly checks pass. The required real Zellij parser/equality gate has not yet run. There is no UI and no claim of a completed product until that gate succeeds.
+**This is a source-only feasibility checkpoint.** JavaScript assembly checks pass. The first native CI compiled the real crate and verified provenance, then rejected a bar-template fixture. The corrected full equality gate remains pending. There is no UI and no claim of a completed product until that gate succeeds.
 
 ## Boundary
 
@@ -20,7 +20,7 @@ This preserves KDL source bytes inside each block, not literal runtime paths aft
 
 No imports or module discovery occur. Missing modules/templates, conflicting names, duplicate defaults/properties, cycles, invalid placement, malformed placeholders, and unsupported syntax are blocked. Two alternatives may define the same name if they are never selected together. Output follows each project's declared module order; it does not rewrite or inline those source blocks.
 
-Supported features are pane/tab containers and named templates, one optional default-tab template, quoted command/argument/cwd/edit strings, sizes, split direction, focus, borderless panes, start/close flags, stacks/expansion flags, and location-only plugin nodes. Floating/swap/new-tab layouts, external includes, `contents_file`, annotations, and arbitrary plugin configuration are outside this release. Tab templates require one explicit `children` placeholder. Native validation for arbitrary user exports is not performed by the JavaScript assembler.
+Supported features are pane/tab containers and named templates, one optional default-tab template, quoted command/argument/cwd/edit strings, sizes, split direction, focus, borderless panes, start/close flags, stacks/expansion flags, and location-only plugin nodes. Floating/swap/new-tab layouts, external includes, `contents_file`, annotations, and arbitrary plugin configuration are outside this release. Tab templates require one explicit `children` placeholder. Put `size` on pane-template uses, not definitions: the pinned native parser rejects the ambiguous sized bar-template form tested in the first gate. Native validation for arbitrary user exports is not performed by the JavaScript assembler.
 
 The parser is `@bgotink/kdl` **0.4.0**, using only its explicit KDL v1 parser. Its formatter is never used, so its v1-to-v2 formatting metadata does not change exported KDL syntax. Duplicate entries remain observable and are rejected.
 
@@ -34,7 +34,7 @@ The actual [`Layout::from_kdl`](https://github.com/zellij-org/zellij/blob/efd8fd
 
 Alpha has one Dev tab with an editor and a test command. Beta has two tabs with distinct cwd/focus settings. A single shared edit from `args "test"` to `args "test" "-race"` must change exactly two native test-command argument vectors; a cloned before-layout with only those edits must equal the full after-layout. Native invalid duplicate/missing/cyclic/children fixtures must fail parsing. Argument-boundary and cwd mutations must fail the native equality oracle.
 
-The expected positive result remains **unproven until CI compiles and runs the real crate**. [Workflow runs](https://github.com/Masanori-Spec/pane-weave/actions/workflows/native-gate.yml) are the source of truth. Parsing does not establish terminal rendering, command success, plugin behavior, or session usability.
+The expected positive result remains **unproven until the corrected native equality gate passes**. [The first run](https://github.com/Masanori-Spec/pane-weave/actions/runs/37452441547) verified all 212 upstream source files and compiled the real crate, then rejected `size` on a bar-template definition. Sizes were moved to its uses; the independently written references and full equality oracle are unchanged. The resolved 283-dependency Cargo lock from that compile is retained and enforced for the retry. [Workflow runs](https://github.com/Masanori-Spec/pane-weave/actions/workflows/native-gate.yml) are the source of truth. Parsing does not establish terminal rendering, command success, plugin behavior, or session usability.
 
 ## Reproduce source checks
 
