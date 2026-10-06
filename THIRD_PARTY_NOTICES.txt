@@ -1,0 +1,35 @@
+Original PaneWeave source has no license grant. No third-party implementation
+source or binary is bundled in this source-only feasibility deliverable.
+
+The pinned JavaScript parser dependency @bgotink/kdl 0.4.0 has no runtime
+transitive dependencies and is MIT licensed. It is fetched by npm, not copied
+into this source archive. Its full notice is retained below for future bundles.
+
+MIT License
+
+Copyright (c) 2022- Bram Gotink
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Native test boundary: zellij-utils 0.45.1 is MIT licensed. The unmodified crate
+and its transitive dependencies are downloaded by Cargo only for native CI.
+No registry implementation source, compiled probe, embedded plugin assets,
+WASM, or toolchain is included in this repository/Library source archive or
+uploaded CI evidence. Actual resolved versions, checksums, license identifiers,
+and source identity checks are retained as metadata when native CI runs.

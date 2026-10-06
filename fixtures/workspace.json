@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "modules": [
+    {
+      "id": "frames",
+      "kdl": "pane_template name=\"topBar\" size=1 borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" size=1 borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar\n    children\n    bottomBar\n}\n"
+    },
+    {
+      "id": "tools",
+      "kdl": "pane_template name=\"editorPane\" command=\"nvim\" {\n    args \"--clean\" \"notes with spaces.md\"\n}\npane_template name=\"testPane\" command=\"make\" {\n    args \"test\"\n}\n"
+    },
+    {
+      "id": "tabs",
+      "kdl": "tab_template name=\"devTab\" {\n    topBar\n    children\n    bottomBar\n}\n"
+    }
+  ],
+  "projects": [
+    {
+      "id": "alpha",
+      "modules": [
+        "frames",
+        "tools",
+        "tabs"
+      ],
+      "kdl": "devTab name=\"Dev\" cwd=\"/work/alpha\" focus=true {\n    editorPane focus=true\n    testPane\n}\n"
+    },
+    {
+      "id": "beta",
+      "modules": [
+        "frames",
+        "tools"
+      ],
+      "kdl": "tab name=\"Review\" cwd=\"/work/beta/docs\" {\n    editorPane focus=true\n}\ntab name=\"Test\" cwd=\"/work/beta/service\" focus=true {\n    testPane focus=true\n}\n"
+    }
+  ]
+}

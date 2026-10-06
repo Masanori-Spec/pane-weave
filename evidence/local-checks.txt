@@ -1,0 +1,47 @@
+
+> pane-weave@0.1.0 verify
+> npm run fixture && npm test
+
+
+> pane-weave@0.1.0 fixture
+> node scripts/generate-fixtures.mjs
+
+Generated four ordinary KDL layouts and source maps; no commands run
+
+> pane-weave@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ two projects assemble ordinary layouts with all original blocks intact (5.179838ms)
+✔ one shared edit changes both selected exports, original stays unchanged (2.251248ms)
+✔ reject missing module (1.551504ms)
+✔ reject duplicate module id (0.701967ms)
+✔ reject duplicate project id (0.825721ms)
+✔ reject duplicate selected module (0.346953ms)
+✔ reject duplicate template (1.12928ms)
+✔ reject duplicate default (0.847493ms)
+✔ reject missing template (1.047649ms)
+✔ reject cycle (0.976373ms)
+✔ reject multiple children (0.724431ms)
+✔ reject children in project (2.452286ms)
+✔ reject nested tab template (0.540469ms)
+✔ reject contents_file (0.430537ms)
+✔ reject unknown import node (0.280014ms)
+✔ reject duplicate property (2.716907ms)
+✔ reject duplicate property child (0.787394ms)
+✔ reject unsupported syntax tag (0.443386ms)
+✔ reject invalid KDL (0.598835ms)
+✔ reject too many modules (0.330739ms)
+✔ reject too many projects (0.130413ms)
+✔ exponential repeated references are bounded using occurrence counts (1.108208ms)
+✔ default template applications count toward expansion limit (0.827453ms)
+✔ source map counts all accepted KDL newline sequences while keeping bytes (3.868349ms)
+✔ input bytes and template count are bounded (1.824968ms)
+✔ unknown/repeated selections reject (1.192403ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 143.298784

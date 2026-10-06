@@ -1,0 +1,4 @@
+node_modules/
+native/target/
+.native/
+__pycache__/

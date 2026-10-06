@@ -1,0 +1,57 @@
+{
+  "sourceMap": [
+    {
+      "kind": "module",
+      "id": "frames",
+      "startLine": 4,
+      "endLine": 15,
+      "startByte": 106,
+      "endByte": 359,
+      "originalText": "pane_template name=\"topBar\" size=1 borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" size=1 borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar\n    children\n    bottomBar\n}\n"
+    },
+    {
+      "kind": "module",
+      "id": "tools",
+      "startLine": 17,
+      "endLine": 23,
+      "startByte": 377,
+      "endByte": 535,
+      "originalText": "pane_template name=\"editorPane\" command=\"nvim\" {\n    args \"--clean\" \"notes with spaces.md\"\n}\npane_template name=\"testPane\" command=\"make\" {\n    args \"test\"\n}\n"
+    },
+    {
+      "kind": "module",
+      "id": "tabs",
+      "startLine": 25,
+      "endLine": 30,
+      "startByte": 552,
+      "endByte": 621,
+      "originalText": "tab_template name=\"devTab\" {\n    topBar\n    children\n    bottomBar\n}\n"
+    },
+    {
+      "kind": "project",
+      "id": "alpha",
+      "startLine": 32,
+      "endLine": 36,
+      "startByte": 640,
+      "endByte": 730,
+      "originalText": "devTab name=\"Dev\" cwd=\"/work/alpha\" focus=true {\n    editorPane focus=true\n    testPane\n}\n"
+    }
+  ],
+  "report": {
+    "modules": [
+      "frames",
+      "tools",
+      "tabs"
+    ],
+    "templates": [
+      "topBar",
+      "bottomBar",
+      "$default",
+      "editorPane",
+      "testPane",
+      "devTab"
+    ],
+    "nativeValidation": "Not performed in this assembler. The native fixture gate is separate.",
+    "executionWarning": "Inert text here. Loading this layout in Zellij may execute commands and load plugin references."
+  }
+}

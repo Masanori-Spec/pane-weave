@@ -1,0 +1,14 @@
+// Independent hand-written native reference. Custom template names are absent.
+layout {
+    default_tab_template {
+        pane size=1 borderless=true { plugin location="zellij:tab-bar"; }
+        children
+        pane size=1 borderless=true { plugin location="zellij:status-bar"; }
+    }
+    tab name="Dev" cwd="/work/alpha" focus=true {
+        pane command="nvim" focus=true {
+            args "--clean" "notes with spaces.md"
+        }
+        pane command="make" { args "test"; }
+    }
+}

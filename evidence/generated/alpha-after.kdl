@@ -1,0 +1,37 @@
+// PaneWeave: review before loading; Zellij may run commands and load plugins.
+layout {
+// module: frames
+pane_template name="topBar" size=1 borderless=true {
+    plugin location="zellij:tab-bar"
+}
+pane_template name="bottomBar" size=1 borderless=true {
+    plugin location="zellij:status-bar"
+}
+default_tab_template {
+    topBar
+    children
+    bottomBar
+}
+
+// module: tools
+pane_template name="editorPane" command="nvim" {
+    args "--clean" "notes with spaces.md"
+}
+pane_template name="testPane" command="make" {
+    args "test" "-race"
+}
+
+// module: tabs
+tab_template name="devTab" {
+    topBar
+    children
+    bottomBar
+}
+
+// project: alpha
+devTab name="Dev" cwd="/work/alpha" focus=true {
+    editorPane focus=true
+    testPane
+}
+
+}

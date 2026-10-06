@@ -1,0 +1,6 @@
+layout {
+    tab_template name="bad" {
+        children unexpected=true
+    }
+    bad { pane; }
+}

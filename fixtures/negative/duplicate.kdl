@@ -1,0 +1,5 @@
+layout {
+    pane_template name="same" command="make"
+    pane_template name="same" command="nvim"
+    tab { same; }
+}

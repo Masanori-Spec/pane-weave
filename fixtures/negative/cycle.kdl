@@ -1,0 +1,5 @@
+layout {
+    pane_template name="cycleA" { cycleB; }
+    pane_template name="cycleB" { cycleA; }
+    tab { cycleA; }
+}

@@ -1,0 +1,1067 @@
+{
+  "crate": "zellij-utils",
+  "version": "0.45.1",
+  "commit": "efd8fd5a89a20c07a111d248ad7fce53848d2c18",
+  "source_files": [
+    {
+      "path": "zellij-utils/src/channels.rs",
+      "bytes": 1588,
+      "git_blob_sha": "5e0f81726e387174fe5148f7394eef2826a2bd0c"
+    },
+    {
+      "path": "zellij-utils/src/cli.rs",
+      "bytes": 60748,
+      "git_blob_sha": "a05a0e2bb0431d4ff10028e88075de38f29694b4"
+    },
+    {
+      "path": "zellij-utils/src/client_server_contract/client_to_server.proto",
+      "bytes": 3737,
+      "git_blob_sha": "dbf7999ed2c3130041e23dfc42c148b9cb53ba00"
+    },
+    {
+      "path": "zellij-utils/src/client_server_contract/common_types.proto",
+      "bytes": 36000,
+      "git_blob_sha": "eb184748d588145e2329c27a2fb566d3f71f4c18"
+    },
+    {
+      "path": "zellij-utils/src/client_server_contract/mod.rs",
+      "bytes": 109,
+      "git_blob_sha": "d5c35b330ded3dc9f15c5ebff66da0b73b36b728"
+    },
+    {
+      "path": "zellij-utils/src/client_server_contract/server_to_client.proto",
+      "bytes": 3276,
+      "git_blob_sha": "3e6f41616c976b125e181794488cc486b9587a19"
+    },
+    {
+      "path": "zellij-utils/src/common_path.rs",
+      "bytes": 4450,
+      "git_blob_sha": "e163f0e0f30d40b29a720b81ded83b1670dc7c32"
+    },
+    {
+      "path": "zellij-utils/src/consts.rs",
+      "bytes": 14518,
+      "git_blob_sha": "48bc1eaa2052fd195090dee6697b4dbeeeec19f0"
+    },
+    {
+      "path": "zellij-utils/src/data.rs",
+      "bytes": 131398,
+      "git_blob_sha": "b3c84bd735dfd1b92bd103540b6ee3eb7afe8188"
+    },
+    {
+      "path": "zellij-utils/src/downloader.rs",
+      "bytes": 9992,
+      "git_blob_sha": "dc6a8d7446219d7c63440fd48c22c91812466b3b"
+    },
+    {
+      "path": "zellij-utils/src/envs.rs",
+      "bytes": 1936,
+      "git_blob_sha": "bda884a9b6cb0de68df2a7ef12fef278771cd163"
+    },
+    {
+      "path": "zellij-utils/src/errors.rs",
+      "bytes": 30734,
+      "git_blob_sha": "cdf439dce769b5c181d14eca1b02a87d884e0049"
+    },
+    {
+      "path": "zellij-utils/src/home.rs",
+      "bytes": 2151,
+      "git_blob_sha": "3cef1106abc0012b3d752c41d18e510bb7bed3bc"
+    },
+    {
+      "path": "zellij-utils/src/home_unix.rs",
+      "bytes": 794,
+      "git_blob_sha": "30922b184610b03a758d5e3db77fb67825b18e15"
+    },
+    {
+      "path": "zellij-utils/src/home_windows.rs",
+      "bytes": 702,
+      "git_blob_sha": "4b9e1006b7f99a3cefb5e786791eee6ce6133a70"
+    },
+    {
+      "path": "zellij-utils/src/input/actions.rs",
+      "bytes": 162503,
+      "git_blob_sha": "0e97793b9a005105a6259ec06fc53d904e34bbb1"
+    },
+    {
+      "path": "zellij-utils/src/input/cli_assets.rs",
+      "bytes": 5073,
+      "git_blob_sha": "23d6a7020713b7ba4b19635c3ac0f3abab8a5272"
+    },
+    {
+      "path": "zellij-utils/src/input/command.rs",
+      "bytes": 4739,
+      "git_blob_sha": "11a34f59f78796731d7a8f1dde1f4a1a328ccab9"
+    },
+    {
+      "path": "zellij-utils/src/input/config.rs",
+      "bytes": 55792,
+      "git_blob_sha": "a87a810da747deeeff670d713a1fae43a5e0dff0"
+    },
+    {
+      "path": "zellij-utils/src/input/keybinds.rs",
+      "bytes": 7106,
+      "git_blob_sha": "2cbdeee7f4395323b7b84fcbf0d976bcee247c5b"
+    },
+    {
+      "path": "zellij-utils/src/input/layout.rs",
+      "bytes": 82111,
+      "git_blob_sha": "3f1f72f1d2d17146ce41ab81f9f19bebb1207fe4"
+    },
+    {
+      "path": "zellij-utils/src/input/mod.rs",
+      "bytes": 21640,
+      "git_blob_sha": "3ca7508f4595e4a3f88381ffb34d4fa47e67fb33"
+    },
+    {
+      "path": "zellij-utils/src/input/mouse.rs",
+      "bytes": 13384,
+      "git_blob_sha": "061309ad56cdc7fd9307ae182b4df32d59d5f926"
+    },
+    {
+      "path": "zellij-utils/src/input/options.rs",
+      "bytes": 38071,
+      "git_blob_sha": "6467c62a1b31dbb3552e27d544d38e13467a39fd"
+    },
+    {
+      "path": "zellij-utils/src/input/permission.rs",
+      "bytes": 1930,
+      "git_blob_sha": "9ef7182ade3a30355d5b4abdd156c885d8a26ccf"
+    },
+    {
+      "path": "zellij-utils/src/input/plugins.rs",
+      "bytes": 8703,
+      "git_blob_sha": "47ea21c32e39884f39230a4b36206354dd1b27c7"
+    },
+    {
+      "path": "zellij-utils/src/input/theme.rs",
+      "bytes": 4081,
+      "git_blob_sha": "b4fbc630e142137906f1f4ce8a7d3e35172d0aa5"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/fixtures/themes/dracula.kdl",
+      "bytes": 366,
+      "git_blob_sha": "77a25f4b51c3896662d13a4ffe4aad56841b703f"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/fixtures/themes/nord.kdl",
+      "bytes": 424,
+      "git_blob_sha": "361a21fd9b0ea4e077260683b11869d0118be852"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/keybinds_test.rs",
+      "bytes": 19065,
+      "git_blob_sha": "b9417ea19ad28739bf40feafadf40bbe00d27ac5"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/layout_test.rs",
+      "bytes": 76535,
+      "git_blob_sha": "52b716133f394c5d202f270de26e476655cd7671"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__keybinds__keybinds_test__error_received_on_unknown_input_mode.snap",
+      "bytes": 264,
+      "git_blob_sha": "2b1b24f7c5519427e94959e51838338eb5d12700"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__keybinds__keybinds_test__error_received_on_unknown_key_instruction.snap",
+      "bytes": 288,
+      "git_blob_sha": "d6f8671361a4d0f9a6660f0e99923c037fece9eb"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__args_added_to_args_in_template.snap",
+      "bytes": 3876,
+      "git_blob_sha": "bb4010cb893c4c5360087d42afe39cde860d4809"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__args_override_args_in_template.snap",
+      "bytes": 4011,
+      "git_blob_sha": "9830de48933e6dd4f0bc3baef35884841a350ac4"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__can_define_a_stack_with_an_expanded_pane.snap",
+      "bytes": 4690,
+      "git_blob_sha": "688f2b80eab823934fafe38d775f23efcfe074f0"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__can_define_stacked_children_for_pane_node.snap",
+      "bytes": 3739,
+      "git_blob_sha": "debfb03fdb38c604879c75ff5a2f272a61a09d4d"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__can_define_stacked_children_for_pane_template.snap",
+      "bytes": 5010,
+      "git_blob_sha": "35c767a675e413ebddfa5fa78d9f2a4605b17b2b"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__can_load_swap_layouts_from_a_different_file.snap",
+      "bytes": 46503,
+      "git_blob_sha": "a1fcdacced533bda16fc4ac69f310cf74f7c9885"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__children_not_as_first_child_of_pane_template.snap",
+      "bytes": 12488,
+      "git_blob_sha": "56ba1f222efb1da18334a2923111eda9c411f8a5"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__children_not_as_first_child_of_tab_template.snap",
+      "bytes": 10920,
+      "git_blob_sha": "3ae6e4a9c990072bd6fdd50676e89800660aa448"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__close_on_exit_added_to_close_on_exit_in_template.snap",
+      "bytes": 3742,
+      "git_blob_sha": "8ba07ad392f015ef62ff35a55a983dda19062e57"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__close_on_exit_overrides_close_on_exit_in_template.snap",
+      "bytes": 3742,
+      "git_blob_sha": "032bd843bccd851d9b506669e92984b82e910d62"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__combined_tab_and_pane_template_both_with_children.snap",
+      "bytes": 15875,
+      "git_blob_sha": "6e99b11c92bfec6dfab80a231dab9c5463d26365"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__cwd_added_to_cwd_in_template.snap",
+      "bytes": 3829,
+      "git_blob_sha": "c2b277c1fcc7c80e351139effcdc4a821dde2ca2"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__cwd_override_cwd_in_template.snap",
+      "bytes": 3912,
+      "git_blob_sha": "303764157d0cdd630a95155c8ba570e811b42d47"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__env_var_expansion.snap",
+      "bytes": 22194,
+      "git_blob_sha": "30b301da4e589de4d23b51bb0e89e8fccbb60028"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_more_than_one_focused_tab.snap",
+      "bytes": 450,
+      "git_blob_sha": "21614c49e635dcc43a888440d34b238b72953bdc"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_multiple_layout_nodes_in_file.snap",
+      "bytes": 460,
+      "git_blob_sha": "ed93deff96aa3e0035484ebafe512b9c00e30e1c"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_pane_templates_without_a_name.snap",
+      "bytes": 455,
+      "git_blob_sha": "fa61245a638b27c26315fde312fe4da077e7f5dd"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_tab_templates_without_a_name.snap",
+      "bytes": 454,
+      "git_blob_sha": "d5d19aeb69a956b2dd8b101fa9fd674008766c16"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_unknown_layout_node.snap",
+      "bytes": 469,
+      "git_blob_sha": "7b1b8af48f22a78c449d6a30b9b80e325670d573"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_unknown_layout_pane_property.snap",
+      "bytes": 456,
+      "git_blob_sha": "1e976f4195981d119696e7b31f6932ef87db667a"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_unknown_layout_pane_template_property.snap",
+      "bytes": 456,
+      "git_blob_sha": "879381fe65ec7fb08908c6a0db120d7e3d18d52e"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_unknown_layout_tab_property.snap",
+      "bytes": 456,
+      "git_blob_sha": "ccb5b9496cd37addac0f541537d63bc075ad9f27"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__error_on_unknown_layout_tab_template_property.snap",
+      "bytes": 456,
+      "git_blob_sha": "a8fc34b59e5609a4dba93a0f5d3b4538a365cfb2"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_and_tab_cwd_prepended_to_panes_with_and_without_cwd.snap",
+      "bytes": 4245,
+      "git_blob_sha": "4fa28d02a7a676607f3db638f63823c9715a9841"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_and_tab_cwd_prepended_to_panes_with_and_without_cwd_in_pane_templates.snap",
+      "bytes": 8098,
+      "git_blob_sha": "36b254dadebf27c2459a9c7471251872987f368b"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_and_tab_cwd_prepended_to_panes_with_and_without_cwd_in_tab_templates.snap",
+      "bytes": 6336,
+      "git_blob_sha": "248d46827625d2b5bf29214a0f10399d09561c78"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_given_to_panes_without_cwd.snap",
+      "bytes": 6732,
+      "git_blob_sha": "b6171a495690e47823f2fe68ff72bc6216d6bf07"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_passed_from_layout_constructor.snap",
+      "bytes": 3497,
+      "git_blob_sha": "aaca18c62a38b8cb9698db42c94242f63e4e8553"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_passed_from_layout_constructor_overrides_global_cwd_in_layout_file.snap",
+      "bytes": 6734,
+      "git_blob_sha": "d5067f75a5a1156d9eb8fe95e7908996eef3c0c8"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_prepended_to_panes_with_cwd.snap",
+      "bytes": 6750,
+      "git_blob_sha": "1666c83bf55fa1e3b1d3e3f6957e3a9921097498"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__global_cwd_with_tab_cwd_given_to_panes_without_cwd.snap",
+      "bytes": 4239,
+      "git_blob_sha": "e745a99b01f39edae565dc87d4a738307aa4eec9"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_command_panes_and_close_on_exit.snap",
+      "bytes": 2372,
+      "git_blob_sha": "baf0eca481065129aea82e4b55e6bbc7bda01763"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_command_panes_and_start_suspended.snap",
+      "bytes": 2370,
+      "git_blob_sha": "481a74d898520a3064b8e45b062cb7d3e864610e"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_default_tab_template.snap",
+      "bytes": 16862,
+      "git_blob_sha": "abddb5c9de3eb9130c2e31107ba1929c8b97b92e"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_nested_branched_pane_templates.snap",
+      "bytes": 11187,
+      "git_blob_sha": "3d267afa09c333896160843505d5f9e23a0d1c9c"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_nested_pane_templates.snap",
+      "bytes": 7866,
+      "git_blob_sha": "6f24f2eeb03cf184fea4ea13077b869ea0c04ba3"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_new_tab_template.snap",
+      "bytes": 9258,
+      "git_blob_sha": "3eb32a53414722291717a29e624827bf8c5503be"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_pane_excluded_from_sync.snap",
+      "bytes": 1872,
+      "git_blob_sha": "a14262ee91dcf8a13d1bc58152f9c10a6dab319b"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_pane_templates.snap",
+      "bytes": 21327,
+      "git_blob_sha": "43965e1144835900dfe58eebdab3827ea9d1f054"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_tab_and_pane_templates.snap",
+      "bytes": 7295,
+      "git_blob_sha": "edc76b2ee6738f8b13e2db550482bc03b1763e3b"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__layout_with_tabs_and_floating_panes.snap",
+      "bytes": 5790,
+      "git_blob_sha": "9e7bf8af8b8862e4ff7611e0a0974586d113d109"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_command_with_cwd_is_overriden_by_its_consumers_bare_cwd.snap",
+      "bytes": 4862,
+      "git_blob_sha": "f6ffefa06a9baae3d0d6c2cab5dd51ea5421aa4c"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_command_with_cwd_overriden_by_its_consumers_command_cwd.snap",
+      "bytes": 4860,
+      "git_blob_sha": "7e3cb306d6a35665949f65810b7683745186e3d1"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_command_with_cwd_remains_when_its_consumer_command_does_not_have_a_cwd.snap",
+      "bytes": 4860,
+      "git_blob_sha": "91e2f3582c741c2adf5f099e3193b53fec8a3e15"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_command_without_cwd_is_overriden_by_its_consumers_cwd.snap",
+      "bytes": 4860,
+      "git_blob_sha": "2d0ca36044d7f4ef7237f426e82a6dcc1df9921a"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_command_without_cwd_receives_its_consumers_bare_cwd.snap",
+      "bytes": 4862,
+      "git_blob_sha": "fdbf56a3a8ad5916233f0182bc98f9ce8df91387"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_with_bare_cwd_overriden_by_its_consumers_bare_cwd.snap",
+      "bytes": 3828,
+      "git_blob_sha": "5bb6cceca2a83e124c00fd4547ca4e4cc3a7e8d8"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_with_bare_propagated_to_its_consumer_command_with_cwd.snap",
+      "bytes": 4862,
+      "git_blob_sha": "4e8812fa553dbb38ae090db72bd7f4553f1d445e"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_with_bare_propagated_to_its_consumer_command_without_cwd.snap",
+      "bytes": 4862,
+      "git_blob_sha": "5ea6f110c1505e72f56bd06741ba27a2da063d58"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_with_bare_propagated_to_its_consumer_edit.snap",
+      "bytes": 4164,
+      "git_blob_sha": "1913b50f51385c3200ea075ab8a3980dda018a95"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__pane_template_with_command_propagated_to_its_consumer_edit.snap",
+      "bytes": 4166,
+      "git_blob_sha": "f6bbaeed6587899c467cb0377af0608a1962971f"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__tab_cwd_given_to_panes_without_cwd.snap",
+      "bytes": 4221,
+      "git_blob_sha": "8a8e5420d874b59f242e03faea68d5f1379a3f10"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__layout__layout_test__tab_cwd_prepended_to_panes_with_cwd.snap",
+      "bytes": 4233,
+      "git_blob_sha": "1b37491ef5a054593942af796e6706bd7c6d289b"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__theme__layout_test__dracula_theme_from_file.snap",
+      "bytes": 2272,
+      "git_blob_sha": "26ee77f898f23f6070c9f4d3cfce8aea76a0d199"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/snapshots/zellij_utils__input__theme__theme_test__dracula_theme_from_file.snap",
+      "bytes": 15613,
+      "git_blob_sha": "6eace5afc073d025b4b00a7b6cf088ce36235757"
+    },
+    {
+      "path": "zellij-utils/src/input/unit/theme_test.rs",
+      "bytes": 635,
+      "git_blob_sha": "97d5adc925757fb9f4e342d35cd87ee19c4be36d"
+    },
+    {
+      "path": "zellij-utils/src/input/web_client.rs",
+      "bytes": 13875,
+      "git_blob_sha": "9607adc0cb8b8dd62dcb891298c1cfbfb926cfd1"
+    },
+    {
+      "path": "zellij-utils/src/ipc.rs",
+      "bytes": 19263,
+      "git_blob_sha": "ee07fa2197cb980d72025b1c9e8cfb10df5fdfc5"
+    },
+    {
+      "path": "zellij-utils/src/ipc/enum_conversions.rs",
+      "bytes": 5856,
+      "git_blob_sha": "6258d11f8e0061cefe03d04bcfe6ca6716c1f81f"
+    },
+    {
+      "path": "zellij-utils/src/ipc/protobuf_conversion.rs",
+      "bytes": 217814,
+      "git_blob_sha": "1e77172e3032483c31b4dbff650511c11bf0aef3"
+    },
+    {
+      "path": "zellij-utils/src/ipc/tests/mod.rs",
+      "bytes": 59,
+      "git_blob_sha": "d3eaefb92e6796f5953dd74ec1d5ecfa7005c2fc"
+    },
+    {
+      "path": "zellij-utils/src/ipc/tests/roundtrip_tests.rs",
+      "bytes": 141876,
+      "git_blob_sha": "f3f6d09ceacc80b4cb80525e47514c85d9a01080"
+    },
+    {
+      "path": "zellij-utils/src/ipc/tests/socket_tests.rs",
+      "bytes": 15795,
+      "git_blob_sha": "6d98b13176916ce81e25827d5365121ffdd652d0"
+    },
+    {
+      "path": "zellij-utils/src/ipc/tests/test_framework.rs",
+      "bytes": 1109,
+      "git_blob_sha": "8c6c024a9d87269f1f20db23429521bee03ae574"
+    },
+    {
+      "path": "zellij-utils/src/kdl/kdl_layout_parser.rs",
+      "bytes": 113154,
+      "git_blob_sha": "3a2fa772889cee7eab8d70277ad0b87641d54e2d"
+    },
+    {
+      "path": "zellij-utils/src/kdl/mod.rs",
+      "bytes": 327089,
+      "git_blob_sha": "427747a458fcc238f504086a285c1620811de582"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__bare_config_from_default_assets_to_string.snap",
+      "bytes": 10759,
+      "git_blob_sha": "d899153890cfee3804daed779eaa4f37403cbf6a"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__bare_config_from_default_assets_to_string_with_comments.snap",
+      "bytes": 22833,
+      "git_blob_sha": "78e1ecc5aa61dd755e32919cd7d5ccc54f30fc7a"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__config_options_to_string.snap",
+      "bytes": 771,
+      "git_blob_sha": "dff98061e80a8d11132a053a7785bd1ed0607d0d"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__config_options_to_string_with_comments.snap",
+      "bytes": 11800,
+      "git_blob_sha": "058649039aaa196c388f0148f4040d5a9d797a5a"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__config_options_to_string_with_some_options.snap",
+      "bytes": 129,
+      "git_blob_sha": "2cf4ba5bf1a9baad58df295b0c8278a397df9fd8"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__config_options_to_string_without_options.snap",
+      "bytes": 104,
+      "git_blob_sha": "82eaf8e5af11b5fca9a50db69df221ed5e4802f3"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__env_vars_to_string.snap",
+      "bytes": 165,
+      "git_blob_sha": "609ed8968a0e1ef07b12ae7c9e7d4bc0e862a197"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string.snap",
+      "bytes": 202,
+      "git_blob_sha": "3055ea875e31d84ee731672852fc058d598cf65b"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string_with_all_actions.snap",
+      "bytes": 4490,
+      "git_blob_sha": "b0119a63daf165df44df4e73d12e9f4f2d83a72f"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string_with_multiple_actions.snap",
+      "bytes": 211,
+      "git_blob_sha": "ddaa4c0d6d5faf6d17e125b049b351b963b8f842"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string_with_multiple_multiline_actions.snap",
+      "bytes": 636,
+      "git_blob_sha": "d6a1792ca0763a2afad693a65f398a26db59a636"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string_with_shared_modes.snap",
+      "bytes": 415,
+      "git_blob_sha": "d7ca3ad27ad77f6dcf27e80b0e4b1dd60a32050f"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__keybinds_to_string_without_clearing_defaults.snap",
+      "bytes": 182,
+      "git_blob_sha": "143bb1efeb9e5ce89cdd8b03235a5547a5a8bc0c"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__plugins_to_string.snap",
+      "bytes": 610,
+      "git_blob_sha": "3988ac01e91d81ca3db22514f3c06a7d81dff43e"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__plugins_to_string_with_file_and_web.snap",
+      "bytes": 366,
+      "git_blob_sha": "0e776bffe8981b18d656163b5bd9f4b644693bd7"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__serialize_and_deserialize_session_info.snap",
+      "bytes": 231,
+      "git_blob_sha": "6c19c4e8cc73d9f17c44cf2e82c4029af2a8092a"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__serialize_and_deserialize_session_info_with_data.snap",
+      "bytes": 2425,
+      "git_blob_sha": "546c4e65a5eab067c8499f709768fe5ef5f998ef"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__themes_to_string.snap",
+      "bytes": 3392,
+      "git_blob_sha": "f0eff7d8eb965e64e3d296863f22dd44ab89ff39"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__themes_to_string_with_combined_definitions.snap",
+      "bytes": 2973,
+      "git_blob_sha": "1da7649f1a117053a73179b24a08172b69c0a76a"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__themes_to_string_with_eight_bit_definitions.snap",
+      "bytes": 2814,
+      "git_blob_sha": "73765c7fba75992645810aa69d0029fd61cb9929"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__themes_to_string_with_hex_definitions.snap",
+      "bytes": 3426,
+      "git_blob_sha": "c996a131988251077d779bbd78d525099fc8f4e0"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__themes_to_string_with_multiple_theme_definitions.snap",
+      "bytes": 6728,
+      "git_blob_sha": "cb289642d8b9da81f9ab20e2e7858d76df1561a1"
+    },
+    {
+      "path": "zellij-utils/src/kdl/snapshots/zellij_utils__kdl__ui_config_to_string.snap",
+      "bytes": 191,
+      "git_blob_sha": "5956ba922bc05c854fa5568c2aeddde07043d861"
+    },
+    {
+      "path": "zellij-utils/src/lib.rs",
+      "bytes": 1446,
+      "git_blob_sha": "e7a2d797f81cb62ce01c31815b01d74cbcab0848"
+    },
+    {
+      "path": "zellij-utils/src/logging.rs",
+      "bytes": 4485,
+      "git_blob_sha": "74f806ca0cabb2858a72bd3ba942e059fcead23f"
+    },
+    {
+      "path": "zellij-utils/src/nested_session.rs",
+      "bytes": 21108,
+      "git_blob_sha": "824c3423a9439c41b48b25631f04fc3bbff9520a"
+    },
+    {
+      "path": "zellij-utils/src/nested_session_contract/mod.rs",
+      "bytes": 121,
+      "git_blob_sha": "5ec943c29dd2b72b1e1258fbb8309ed2c97c02a6"
+    },
+    {
+      "path": "zellij-utils/src/nested_session_contract/nested_session_message.proto",
+      "bytes": 1469,
+      "git_blob_sha": "dfe2f62a0649b90fe8d1bcdbab90a384561e4401"
+    },
+    {
+      "path": "zellij-utils/src/pane_size.rs",
+      "bytes": 16529,
+      "git_blob_sha": "454e73c5cd4175cf9c6fc2750462dbf65b18c201"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/action.proto",
+      "bytes": 16723,
+      "git_blob_sha": "9f1d4aaa5f673634843138299405fa4be373ba62"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/action.rs",
+      "bytes": 155491,
+      "git_blob_sha": "0e787caa68fcf1efb563c5cf0139a6fd5897df29"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/command.proto",
+      "bytes": 136,
+      "git_blob_sha": "70402f25a54376e782cd39b3baf403a8ff33a42a"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/command.rs",
+      "bytes": 914,
+      "git_blob_sha": "2f8bf3005e51b2d420d8a66b63328d0821aede2a"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/event.proto",
+      "bytes": 14831,
+      "git_blob_sha": "3565e85c840f5d9c80a6b089a293fe585cac5e59"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/event.rs",
+      "bytes": 149808,
+      "git_blob_sha": "07ee5a54056d54cfa58afcb5d4b2ec9c9ea6b4db"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/file.proto",
+      "bytes": 136,
+      "git_blob_sha": "b2c5372b833f53f63116c28f44167b32c931930b"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/file.rs",
+      "bytes": 981,
+      "git_blob_sha": "7c06aa8e0466bcd583d077e6783494baa600c166"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/input_mode.proto",
+      "bytes": 1502,
+      "git_blob_sha": "31122495270f57397d17026b0c9206a7c05b48b9"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/input_mode.rs",
+      "bytes": 3070,
+      "git_blob_sha": "0506bb349b6b5f97ad82c216565abc749e5152ec"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/key.proto",
+      "bytes": 1283,
+      "git_blob_sha": "5a5a5819972a9f2f14c413eebbfb39f685ad9279"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/key.rs",
+      "bytes": 8368,
+      "git_blob_sha": "f97170c4d59afd383a8421dffaa7c0a4a56aa567"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/message.proto",
+      "bytes": 138,
+      "git_blob_sha": "35d111506f03102c1c446998e69a9f86391c27e7"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/message.rs",
+      "bytes": 899,
+      "git_blob_sha": "365a427a407ac6b5a1973d12729fb0f4150d14b5"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/mod.rs",
+      "bytes": 1019,
+      "git_blob_sha": "918ad4ae3b0f3d4c24ef7dc87289c6d5adaa83ee"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/pane_frame_style.proto",
+      "bytes": 119,
+      "git_blob_sha": "0acd8beea9eddea67042a885adeb7952c9158e35"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/pane_frame_style.rs",
+      "bytes": 1665,
+      "git_blob_sha": "bedbf3c19c525b634be24e599c9f52bfa76e7024"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/pipe_message.proto",
+      "bytes": 401,
+      "git_blob_sha": "a1d02732098deec13ad28e0d71dcd0a463260c7d"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/pipe_message.rs",
+      "bytes": 2629,
+      "git_blob_sha": "bc3141c79d58edfb3e334c71c5f2d651538cea2c"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_command.proto",
+      "bytes": 34808,
+      "git_blob_sha": "ccff12d9413b80b78bf99841fd48fff8e4f8bf43"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_command.rs",
+      "bytes": 258200,
+      "git_blob_sha": "c47ee1507f580acf9381dd4ee77c574050ab0b03"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_ids.proto",
+      "bytes": 213,
+      "git_blob_sha": "c2c7870c05091263c5c13a4b0ba01a971e3028bc"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_ids.rs",
+      "bytes": 1357,
+      "git_blob_sha": "9a750973440b6685a61bb48abf69790d41f21db2"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_permission.proto",
+      "bytes": 494,
+      "git_blob_sha": "ff286ea01a1d1379ee9becf1e3a1f1c34cb20bf4"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/plugin_permission.rs",
+      "bytes": 4133,
+      "git_blob_sha": "3bd853004b381ac133a2a1c1b630878adad164c9"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/resize.proto",
+      "bytes": 324,
+      "git_blob_sha": "eebac79d1284dde692d57e99df98778b6e8d64db"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/resize.rs",
+      "bytes": 5174,
+      "git_blob_sha": "eefaa87fb76af82de9433b82ce7850db5839f31f"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/style.proto",
+      "bytes": 1523,
+      "git_blob_sha": "cfea362e52658456f8f9a7af564231d2ef3227de"
+    },
+    {
+      "path": "zellij-utils/src/plugin_api/style.rs",
+      "bytes": 13890,
+      "git_blob_sha": "bb1e10ec668a7e9992d08c70244852ec8ac4fc48"
+    },
+    {
+      "path": "zellij-utils/src/position.rs",
+      "bytes": 1231,
+      "git_blob_sha": "95987c27c06b41e062b4889e306b7c62a7f31644"
+    },
+    {
+      "path": "zellij-utils/src/remote_session_tokens.rs",
+      "bytes": 3508,
+      "git_blob_sha": "b0a323ee8c60426a9b8852c948cee4b064269273"
+    },
+    {
+      "path": "zellij-utils/src/session_serialization.rs",
+      "bytes": 90514,
+      "git_blob_sha": "50940f87c3775fc2050f9b087008837f263261f0"
+    },
+    {
+      "path": "zellij-utils/src/sessions.rs",
+      "bytes": 26308,
+      "git_blob_sha": "4c9fc76d57e8936dbdb162c719243e8c3ab663a5"
+    },
+    {
+      "path": "zellij-utils/src/setup.rs",
+      "bytes": 33743,
+      "git_blob_sha": "14a5c65ebdd5ad112e762a84f322de415d266892"
+    },
+    {
+      "path": "zellij-utils/src/shared.rs",
+      "bytes": 6909,
+      "git_blob_sha": "7e27f9a81dea8f40148e882f61a58184b8153d42"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_multiple_tabs.snap",
+      "bytes": 290,
+      "git_blob_sha": "9600abd46a3f609fd82f1361453d70dea0951b7e"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_new_tab_template.snap",
+      "bytes": 298,
+      "git_blob_sha": "a408d48d8e1f0ba16940078b0209588e932f55cf"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_swap_floating_panes.snap",
+      "bytes": 1353,
+      "git_blob_sha": "2b1838a8a59a56f603560797fc8dffe2550dd6bf"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_swap_tiled_panes.snap",
+      "bytes": 736,
+      "git_blob_sha": "8cc4562d034e17f4d6613ddb262f492a0bb44c27"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_focus.snap",
+      "bytes": 150,
+      "git_blob_sha": "4577fcf07f643b50213372233464ad44f4eabab0"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_hide_floating_panes.snap",
+      "bytes": 164,
+      "git_blob_sha": "59c7a1df727829fb2ca3d4f93277ff654b792144"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_name.snap",
+      "bytes": 148,
+      "git_blob_sha": "2d8b889748e7a241b1a4e9552686d9c73cf666cc"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_with_floating_panes.snap",
+      "bytes": 1910,
+      "git_blob_sha": "e800233ea1c2754713309e1c3fb0df7576f0713f"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_with_multiple_stacked_panes_in_the_same_node.snap",
+      "bytes": 402,
+      "git_blob_sha": "701c9baa7f39dd2d11dc3e3ae7115f554b65f53b"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_with_multiple_stacks_next_to_eachother.snap",
+      "bytes": 913,
+      "git_blob_sha": "883da9d96025af2bac1858999a1cb153c13493df"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_with_stacked_panes.snap",
+      "bytes": 262,
+      "git_blob_sha": "ea6dc84283a71f1fff97f6ff40a153cae4a77bb8"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__can_serialize_tab_with_tiled_panes.snap",
+      "bytes": 969,
+      "git_blob_sha": "f9ba3a25d40e3e17ac1e0113e563e2bea2d296a6"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__session_serialization__tests__global_cwd.snap",
+      "bytes": 144,
+      "git_blob_sha": "88403e9d0733765d855903b0f3b648afb1a42c01"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__cli_arguments_override_config_options.snap",
+      "bytes": 1832,
+      "git_blob_sha": "75055a45b1bc95c6c37d232dbe986cb0dfbed12e"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__cli_arguments_override_layout_options.snap",
+      "bytes": 1832,
+      "git_blob_sha": "6c76730ec79482918b6356aa244370900545bd54"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__default_config_with_no_cli_arguments-2.snap",
+      "bytes": 135,
+      "git_blob_sha": "abe93e4222a52f298833b9f039a82c22b5fc6c2d"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__default_config_with_no_cli_arguments-3.snap",
+      "bytes": 1811,
+      "git_blob_sha": "9c43caf15392720a8ab0ef4367b49cf925cac88c"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__default_config_with_no_cli_arguments.snap",
+      "bytes": 165318,
+      "git_blob_sha": "0ee0af422800094c59e8f326a1627962590d2eda"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_env_vars_override_config_env_vars.snap",
+      "bytes": 165461,
+      "git_blob_sha": "54cfaad2fca87cf557b8151ccf4f896ae8099a83"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_keybinds_override_config_keybinds.snap",
+      "bytes": 9021,
+      "git_blob_sha": "01dd13c74450561a4ff083d0d394c11134e261b7"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_options_override_config_options.snap",
+      "bytes": 1833,
+      "git_blob_sha": "9a6a3bb181e4939bfe888dd19b0a3ee7b4961856"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_plugins_override_config_plugins.snap",
+      "bytes": 84911,
+      "git_blob_sha": "6e89173287d35401c468767199ef9a59d1537c8b"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_themes_override_config_themes.snap",
+      "bytes": 217859,
+      "git_blob_sha": "61dc1e19658759f8225adb93e8a9fbb07aed2360"
+    },
+    {
+      "path": "zellij-utils/src/snapshots/zellij_utils__setup__setup_test__layout_ui_config_overrides_config_ui_config.snap",
+      "bytes": 165317,
+      "git_blob_sha": "9232f73bf01b97ed74280d0fd9e47ab8e6d48373"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-dirs/custom-default-layout/layouts/default.kdl",
+      "bytes": 278,
+      "git_blob_sha": "73aa0136db811a9478c77fd6dbe5fe6ba556f781"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-dirs/layout-upside-down/config.kdl",
+      "bytes": 29,
+      "git_blob_sha": "97e38e6eb52ee77862f3d293875c0a7b32a3c19d"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-dirs/layout-upside-down/layouts/upside-down.kdl",
+      "bytes": 276,
+      "git_blob_sha": "e682ce83d925f1751833524db5bfc788c4cc8494"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-with-env-vars.kdl",
+      "bytes": 77,
+      "git_blob_sha": "87c94e6c3d20f04055fd8572f6f730670dd07b2a"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-with-keybindings-config.kdl",
+      "bytes": 264,
+      "git_blob_sha": "84f98de57778e5b93fbdf3e475871a0bf8dbc39d"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-with-plugins-config.kdl",
+      "bytes": 154,
+      "git_blob_sha": "513e4de0338e553c1e398d3aca4ce8c2997e6df6"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-with-themes-config.kdl",
+      "bytes": 505,
+      "git_blob_sha": "e0ed0aa387594af0719c1c7688539b03ebf62b82"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/config-with-ui-config.kdl",
+      "bytes": 61,
+      "git_blob_sha": "fbd518fad87e5cde91a998a362b47a865e8e8430"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-env-vars.kdl",
+      "bytes": 89,
+      "git_blob_sha": "0ef6721aeddcbc9faf8ae9029b9acf5679cba3bf"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-keybindings-config.kdl",
+      "bytes": 245,
+      "git_blob_sha": "62c5cd8b797d9e94554eae220b482523a9fe8127"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-options.kdl",
+      "bytes": 25,
+      "git_blob_sha": "408003b178190a099bdb7d884c4921e7554b2341"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-plugins-config.kdl",
+      "bytes": 124,
+      "git_blob_sha": "95b177abbf54fd635443fc29fae38866ac3f7a7a"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-themes-config.kdl",
+      "bytes": 507,
+      "git_blob_sha": "7fc57aa0d49904d4d677864a714753ba984e0c8a"
+    },
+    {
+      "path": "zellij-utils/src/test-fixtures/layout-with-ui-config.kdl",
+      "bytes": 67,
+      "git_blob_sha": "dfaeee91eb614c14b5b6ba4addc302c14895462a"
+    },
+    {
+      "path": "zellij-utils/src/vendored/mod.rs",
+      "bytes": 53,
+      "git_blob_sha": "52e617887fec0e1760dd4125c4f3668d0f848e3d"
+    },
+    {
+      "path": "zellij-utils/src/vendored/termwiz/LICENSE.md",
+      "bytes": 1068,
+      "git_blob_sha": "4f8790ca798983e5eba7c920f6c83035461e2ee7"
+    },
+    {
+      "path": "zellij-utils/src/vendored/termwiz/input.rs",
+      "bytes": 116188,
+      "git_blob_sha": "3e83f1bbfa469dafd0f742cbe7f7de8694aed55a"
+    },
+    {
+      "path": "zellij-utils/src/vendored/termwiz/keymap.rs",
+      "bytes": 9577,
+      "git_blob_sha": "0b5f5c56b34f1981af28c70f9dc95b3ccc3d0f4e"
+    },
+    {
+      "path": "zellij-utils/src/vendored/termwiz/mod.rs",
+      "bytes": 220,
+      "git_blob_sha": "736c6eb49577a2b73a1dc33812f99420d5212683"
+    },
+    {
+      "path": "zellij-utils/src/vendored/termwiz/readbuf.rs",
+      "bytes": 1400,
+      "git_blob_sha": "e428ee1c118ed452da00ee72aa5fea2202940686"
+    },
+    {
+      "path": "zellij-utils/src/web_authentication_tokens.rs",
+      "bytes": 11495,
+      "git_blob_sha": "7e0deabf85688498f5b615800634ad67c6602369"
+    },
+    {
+      "path": "zellij-utils/src/web_server_commands.rs",
+      "bytes": 3798,
+      "git_blob_sha": "a7682889ab50a4bc8707eb3c638f06640b5a00a3"
+    },
+    {
+      "path": "zellij-utils/src/web_server_contract/mod.rs",
+      "bytes": 139,
+      "git_blob_sha": "ada2481e9ef5a00c48fb561ea5f66b3bd570d767"
+    },
+    {
+      "path": "zellij-utils/src/web_server_contract/protobuf_conversion.rs",
+      "bytes": 3119,
+      "git_blob_sha": "c5f5f496fdc97f1e0eb1e4e23dc57472facdee71"
+    },
+    {
+      "path": "zellij-utils/src/web_server_contract/web_server_commands.proto",
+      "bytes": 650,
+      "git_blob_sha": "dd1d7ae412eb4b800aeffc1c818a69bb7f635ba5"
+    }
+  ]
+}

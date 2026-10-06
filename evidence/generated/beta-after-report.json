@@ -1,0 +1,46 @@
+{
+  "sourceMap": [
+    {
+      "kind": "module",
+      "id": "frames",
+      "startLine": 4,
+      "endLine": 15,
+      "startByte": 106,
+      "endByte": 359,
+      "originalText": "pane_template name=\"topBar\" size=1 borderless=true {\n    plugin location=\"zellij:tab-bar\"\n}\npane_template name=\"bottomBar\" size=1 borderless=true {\n    plugin location=\"zellij:status-bar\"\n}\ndefault_tab_template {\n    topBar\n    children\n    bottomBar\n}\n"
+    },
+    {
+      "kind": "module",
+      "id": "tools",
+      "startLine": 17,
+      "endLine": 23,
+      "startByte": 377,
+      "endByte": 543,
+      "originalText": "pane_template name=\"editorPane\" command=\"nvim\" {\n    args \"--clean\" \"notes with spaces.md\"\n}\npane_template name=\"testPane\" command=\"make\" {\n    args \"test\" \"-race\"\n}\n"
+    },
+    {
+      "kind": "project",
+      "id": "beta",
+      "startLine": 25,
+      "endLine": 31,
+      "startByte": 561,
+      "endByte": 711,
+      "originalText": "tab name=\"Review\" cwd=\"/work/beta/docs\" {\n    editorPane focus=true\n}\ntab name=\"Test\" cwd=\"/work/beta/service\" focus=true {\n    testPane focus=true\n}\n"
+    }
+  ],
+  "report": {
+    "modules": [
+      "frames",
+      "tools"
+    ],
+    "templates": [
+      "topBar",
+      "bottomBar",
+      "$default",
+      "editorPane",
+      "testPane"
+    ],
+    "nativeValidation": "Not performed in this assembler. The native fixture gate is separate.",
+    "executionWarning": "Inert text here. Loading this layout in Zellij may execute commands and load plugin references."
+  }
+}
