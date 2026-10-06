@@ -1,4 +1,4 @@
-name: Verify PaneWeave native layout equality
+name: Verify PaneWeave offline app and native layouts
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -22,9 +22,16 @@ jobs:
         run: |
           rustc +1.98.1 --version > evidence/rust-toolchain.txt
           cargo +1.98.1 run --locked --manifest-path native/Cargo.toml > evidence/native-result.json
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - run: python scripts/consume-browser-downloads.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: native-evidence
-          path: evidence/
+          path: |
+            evidence/
+            dist/
+            test-results/
+            playwright-report/
           if-no-files-found: error
