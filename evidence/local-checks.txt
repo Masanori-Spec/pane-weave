@@ -11,47 +11,47 @@ Generated four ordinary KDL layouts and source maps; no commands run
 > pane-weave@0.1.0 build
 > node scripts/build-ui.mjs
 
-Self-contained offline HTML: 78238 bytes; bundled @bgotink/kdl, fflate
+Self-contained offline HTML: 78341 bytes; bundled @bgotink/kdl, fflate
 
 > pane-weave@0.1.0 test
 > node --test tests/*.test.mjs
 
-✔ two projects assemble ordinary layouts with all original blocks intact (6.895223ms)
-✔ one shared edit changes both selected exports, original stays unchanged (3.165018ms)
-✔ reject missing module (1.29947ms)
-✔ reject duplicate module id (0.680265ms)
-✔ reject duplicate project id (0.855174ms)
-✔ reject duplicate selected module (0.474321ms)
-✔ reject duplicate template (0.651202ms)
-✔ reject duplicate default (0.656ms)
-✔ reject missing template (1.636835ms)
-✔ reject cycle (1.206424ms)
-✔ reject pane-template size (1.343166ms)
-✔ reject multiple children (0.760614ms)
-✔ reject children in project (0.775937ms)
-✔ reject nested tab template (0.855655ms)
-✔ reject contents_file (0.606156ms)
-✔ reject unknown import node (0.612475ms)
-✔ reject duplicate property (0.604213ms)
-✔ reject duplicate property child (0.567519ms)
-✔ reject unsupported syntax tag (0.875634ms)
-✔ reject leading KDL BOM (0.194738ms)
-✔ reject invalid KDL (0.971266ms)
-✔ reject too many modules (0.2846ms)
-✔ reject too many projects (0.18916ms)
-✔ exponential repeated references are bounded using occurrence counts (1.660004ms)
-✔ default template applications count toward expansion limit (1.529691ms)
-✔ source map counts all accepted KDL newline sequences while keeping bytes (3.233219ms)
-✔ input bytes and template count are bounded (2.545012ms)
-✔ unknown/repeated selections reject (1.607567ms)
-✔ review ZIP contains only selected projects and required modules with exact KDL (11.289969ms)
-✔ review detects shared edit in both projects without mutating original (3.378378ms)
-✔ invalid edit fails atomically; declaration strings stay inert (2.323224ms)
-✔ editor retains uniform CRLF/CR source; mixed endings require JSON editing (0.572156ms)
-✔ actual bundled worker produces a valid safe-entry ZIP (94.475041ms)
-✔ single HTML embeds complete dependency notices and has no remote assets (0.982753ms)
-✔ oversized declaration review fails before producing a large DOM payload (39.935444ms)
-✔ normalized saved workspace must fit the same re-import byte bound (93.28729ms)
+✔ two projects assemble ordinary layouts with all original blocks intact (8.065951ms)
+✔ one shared edit changes both selected exports, original stays unchanged (3.29249ms)
+✔ reject missing module (1.590994ms)
+✔ reject duplicate module id (0.821505ms)
+✔ reject duplicate project id (0.860383ms)
+✔ reject duplicate selected module (0.578555ms)
+✔ reject duplicate template (0.97378ms)
+✔ reject duplicate default (0.918779ms)
+✔ reject missing template (0.936605ms)
+✔ reject cycle (1.306192ms)
+✔ reject pane-template size (0.949485ms)
+✔ reject multiple children (0.786774ms)
+✔ reject children in project (0.647087ms)
+✔ reject nested tab template (0.741858ms)
+✔ reject contents_file (0.455063ms)
+✔ reject unknown import node (0.502464ms)
+✔ reject duplicate property (0.398109ms)
+✔ reject duplicate property child (0.436186ms)
+✔ reject unsupported syntax tag (0.674458ms)
+✔ reject leading KDL BOM (0.207958ms)
+✔ reject invalid KDL (0.758202ms)
+✔ reject too many modules (0.186586ms)
+✔ reject too many projects (0.152025ms)
+✔ exponential repeated references are bounded using occurrence counts (0.850488ms)
+✔ default template applications count toward expansion limit (1.383437ms)
+✔ source map counts all accepted KDL newline sequences while keeping bytes (2.702898ms)
+✔ input bytes and template count are bounded (2.294284ms)
+✔ unknown/repeated selections reject (1.185152ms)
+✔ review ZIP contains only selected projects and required modules with exact KDL (11.549238ms)
+✔ review detects shared edit in both projects without mutating original (3.789866ms)
+✔ invalid edit fails atomically; declaration strings stay inert (2.108559ms)
+✔ editor retains uniform CRLF/CR source; mixed endings require JSON editing (0.650141ms)
+✔ actual bundled worker produces a valid safe-entry ZIP (83.58515ms)
+✔ single HTML embeds complete dependency notices and has no remote assets (1.125544ms)
+✔ oversized declaration review fails before producing a large DOM payload (37.980302ms)
+✔ normalized saved workspace must fit the same re-import byte bound (43.83782ms)
 ℹ tests 36
 ℹ suites 0
 ℹ pass 36
@@ -59,4 +59,4 @@ Self-contained offline HTML: 78238 bytes; bundled @bgotink/kdl, fflate
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 360.858027
+ℹ duration_ms 313.121928

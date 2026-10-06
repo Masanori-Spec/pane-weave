@@ -17,7 +17,7 @@ Raw KDL files must be valid UTF-8 without a leading BOM; malformed bytes are rej
 
 保存した HTML を開くだけで使えます。共有モジュールを適用し、対象プロジェクトを選んで組み立てると、KDL の変更・宣言・出典を確認して ZIP に保存できます。Zellij の起動や設定の書き込みは行いません。
 
-The real native fixture gate has passed. The newly added UI/actual-browser-download gate is **pending CI verification**; local checks alone do not establish browser success.
+The real native fixture and browser-download gates have passed for the synthetic example; see the exact runs and scope below. The current workflow repeats those checks for later commits.
 
 ## Boundary
 
@@ -53,7 +53,9 @@ Alpha has one Dev tab with an editor and a test command. Beta has two tabs with 
 
 [The first run](https://github.com/Masanori-Spec/pane-weave/actions/runs/37452441547) had compiled the real crate but rejected `size` on a bar-template definition. Sizes were moved to uses; the independently written references and full-equality oracle were not weakened. The current bounded assembler rejects definition-level sizes explicitly.
 
-The UI workflow now opens the actual offline HTML under sandboxed Chromium on Ubuntu 22.04 with browser networking disabled, downloads real before/after ZIPs, extracts the four actual KDL files, and passes them through the **same pinned native probe and unchanged references**. It checks JA/EN, keyboard scope, inert HTML-looking strings, stale imports, invalid UTF-8, repeated imports/downloads, pending-edit guards, line endings, mobile/enlarged text, and Worker failure. This new browser stage is pending; [current runs](https://github.com/Masanori-Spec/pane-weave/actions/workflows/native-gate.yml) show its outcome.
+[The real browser/download run](https://github.com/Masanori-Spec/pane-weave/actions/runs/37458660178) passed on exact commit `fa08fcca12a40156635550753f1f203a6b4f9c91`: 36 source/package checks and all four browser tests. It opened the actual offline HTML under sandboxed Chromium on Ubuntu 22.04 with browser networking disabled, downloaded before/after ZIPs, and passed their four actual KDL files through the **same pinned native probe and unchanged references**. All four full Layout equalities, exactly two argument edits, four parser-rejection controls, and two equality-corruption controls passed.
+
+The tested flows cover JA/EN, keyboard project selection, inert HTML-looking strings, stale JSON/KDL reads, invalid UTF-8, repeated imports/downloads, failed-import comparison history, pending-edit locks, CRLF/mixed line endings, mobile/enlarged text, and Worker failure. The four UI screenshots were inspected. Actual ZIP SHA-256 values were `a44fc76aa8940f8e9b211893ebc07eb2f775cfdbc88fa6d2670009027f6e6f2d` (before) and `5ea15af5740b8c5ed7a1727f25976fe1db9c98d3fafd3f2d0f91838305e8df66` (after). The later mobile wrapping correction adds a maximum-length identifier regression and screenshot; [current runs](https://github.com/Masanori-Spec/pane-weave/actions/workflows/native-gate.yml) establish its result for each published commit. These results cover the bounded synthetic flows, not all possible user layouts or runtime behavior.
 
 UI change labels compare exported KDL text, including unused definitions. They do not claim a resolved native semantic diff for arbitrary user layouts. The declaration table shows source fields before inheritance or environment expansion.
 
