@@ -7,9 +7,16 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "fixture": "node scripts/generate-fixtures.mjs",
-    "verify": "npm run fixture && npm test"
+    "verify": "npm run fixture && npm run build && npm test",
+    "build": "node scripts/build-ui.mjs",
+    "test:browser": "playwright test"
   },
   "dependencies": {
-    "@bgotink/kdl": "0.4.0"
+    "@bgotink/kdl": "0.4.0",
+    "fflate": "0.8.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1",
+    "esbuild": "0.25.10"
   }
 }

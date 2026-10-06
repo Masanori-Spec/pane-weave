@@ -13,7 +13,7 @@ const boolProperties=new Set(['focus','borderless','close_on_exit','start_suspen
 const reserved=new Set([...definitions,...paneProperties,...tabProperties,'layout','pane','tab','children','args','plugin','location','new_tab_template','floating_panes','swap_tiled_layout','swap_floating_layout','contents_file','include']);
 function safeString(v){return typeof v==='string'&&v.length<=4096&&v.isWellFormed()&&!/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(v);}
 function ast(text){
- if(typeof text!=='string'||!text.isWellFormed()||bytes(text)>LIMITS.bytes||/[\u0000\u000b\u000c]/.test(text))fail('invalid-kdl-text');
+ if(typeof text!=='string'||text.startsWith('\uFEFF')||!text.isWellFormed()||bytes(text)>LIMITS.bytes||/[\u0000\u000b\u000c]/.test(text))fail('invalid-kdl-text');
  let document;try{document=parseV1(text);}catch{fail('invalid-kdl-syntax');}
  let count=0;
  const convert=(node,depth)=>{

@@ -1,0 +1,2 @@
+import {validateWorkspace,editModule,review,reviewZip} from './workspace.mjs';
+self.onmessage=({data})=>{try{let value;if(data.type==='import')value=validateWorkspace(data.text);else if(data.type==='edit')value=editModule(data.workspace,data.moduleId,data.text);else if(data.type==='review'){value=review(data.workspace,data.ids,data.previous);value.zip=reviewZip(value);}else throw Error('invalid-request');self.postMessage({id:data.id,ok:true,value});}catch(error){self.postMessage({id:data.id,ok:false,error:typeof error.message==='string'?error.message:'failed'});}};

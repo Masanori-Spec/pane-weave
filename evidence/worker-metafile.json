@@ -1,0 +1,618 @@
+{
+  "inputs": {
+    "node_modules/@bgotink/kdl/parser/tokenize/types.js": {
+      "bytes": 5093,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/tokenize/context.js": {
+      "bytes": 6312,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "../../error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/tokenize/tokenize.js": {
+      "bytes": 17798,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "../../error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/context.js",
+          "kind": "import-statement",
+          "original": "./context.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/tokenize.js": {
+      "bytes": 86,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/types.js",
+          "kind": "import-statement",
+          "original": "./tokenize/types.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/tokenize.js",
+          "kind": "import-statement",
+          "original": "./tokenize/tokenize.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/error.js": {
+      "bytes": 2911,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./parser/tokenize.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/flags.js": {
+      "bytes": 1204,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/identifier.js": {
+      "bytes": 924,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/tag.js": {
+      "bytes": 1408,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/value.js": {
+      "bytes": 1934,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/model/tag.js",
+          "kind": "import-statement",
+          "original": "./tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/entry.js": {
+      "bytes": 2802,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/model/identifier.js",
+          "kind": "import-statement",
+          "original": "./identifier.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/value.js",
+          "kind": "import-statement",
+          "original": "./value.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/utils.js": {
+      "bytes": 165,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/node.js": {
+      "bytes": 13059,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/model/document.js",
+          "kind": "import-statement",
+          "original": "./document.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/entry.js",
+          "kind": "import-statement",
+          "original": "./entry.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/identifier.js",
+          "kind": "import-statement",
+          "original": "./identifier.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/tag.js",
+          "kind": "import-statement",
+          "original": "./tag.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/value.js",
+          "kind": "import-statement",
+          "original": "./value.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model/document.js": {
+      "bytes": 5190,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/model/node.js",
+          "kind": "import-statement",
+          "original": "./node.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/value.js",
+          "kind": "import-statement",
+          "original": "./value.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/model.js": {
+      "bytes": 320,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/model/document.js",
+          "kind": "import-statement",
+          "original": "./model/document.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/entry.js",
+          "kind": "import-statement",
+          "original": "./model/entry.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/identifier.js",
+          "kind": "import-statement",
+          "original": "./model/identifier.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/node.js",
+          "kind": "import-statement",
+          "original": "./model/node.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/value.js",
+          "kind": "import-statement",
+          "original": "./model/value.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/tag.js",
+          "kind": "import-statement",
+          "original": "./model/tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/clear-format.js": {
+      "bytes": 2597,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/locations.js": {
+      "bytes": 1177,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/string-utils.js": {
+      "bytes": 13779,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "./error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./parser/tokenize.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/parse.js": {
+      "bytes": 24376,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "../error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/locations.js",
+          "kind": "import-statement",
+          "original": "../locations.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model.js",
+          "kind": "import-statement",
+          "original": "../model.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/string-utils.js",
+          "kind": "import-statement",
+          "original": "../string-utils.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./tokenize.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/parse-whitespace.js": {
+      "bytes": 4746,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./tokenize.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse.js",
+          "kind": "import-statement",
+          "original": "./parse.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parse.js": {
+      "bytes": 2050,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "./error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/flags.js",
+          "kind": "import-statement",
+          "original": "./flags.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./parser/tokenize.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse.js",
+          "kind": "import-statement",
+          "original": "./parser/parse.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse-whitespace.js",
+          "kind": "import-statement",
+          "original": "./parser/parse-whitespace.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/index.js": {
+      "bytes": 1554,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/clear-format.js",
+          "kind": "import-statement",
+          "original": "./clear-format.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "./error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/format.js",
+          "kind": "import-statement",
+          "original": "./format.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/locations.js",
+          "kind": "import-statement",
+          "original": "./locations.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parse.js",
+          "kind": "import-statement",
+          "original": "./parse.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/format.js": {
+      "bytes": 4974,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/string-utils.js",
+          "kind": "import-statement",
+          "original": "./string-utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/parse-v1.js": {
+      "bytes": 12768,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/format.js",
+          "kind": "import-statement",
+          "original": "../format.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/locations.js",
+          "kind": "import-statement",
+          "original": "../locations.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model.js",
+          "kind": "import-statement",
+          "original": "../model.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/string-utils.js",
+          "kind": "import-statement",
+          "original": "../string-utils.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse.js",
+          "kind": "import-statement",
+          "original": "./parse.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./tokenize.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/parser/tokenize/tokenize-v1.js": {
+      "bytes": 8876,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/context.js",
+          "kind": "import-statement",
+          "original": "./context.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/tokenize.js",
+          "kind": "import-statement",
+          "original": "./tokenize.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@bgotink/kdl/v1-compat.js": {
+      "bytes": 4268,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/error.js",
+          "kind": "import-statement",
+          "original": "./error.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/flags.js",
+          "kind": "import-statement",
+          "original": "./flags.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/model/document.js",
+          "kind": "import-statement",
+          "original": "./model/document.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse-v1.js",
+          "kind": "import-statement",
+          "original": "./parser/parse-v1.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/parse.js",
+          "kind": "import-statement",
+          "original": "./parser/parse.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize.js",
+          "kind": "import-statement",
+          "original": "./parser/tokenize.js"
+        },
+        {
+          "path": "node_modules/@bgotink/kdl/parser/tokenize/tokenize-v1.js",
+          "kind": "import-statement",
+          "original": "./parser/tokenize/tokenize-v1.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/engine.mjs": {
+      "bytes": 11040,
+      "imports": [
+        {
+          "path": "node_modules/@bgotink/kdl/v1-compat.js",
+          "kind": "import-statement",
+          "original": "@bgotink/kdl/v1-compat"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/fflate/esm/browser.js": {
+      "bytes": 89198,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/editor.mjs": {
+      "bytes": 501,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/workspace.mjs": {
+      "bytes": 3682,
+      "imports": [
+        {
+          "path": "src/engine.mjs",
+          "kind": "import-statement",
+          "original": "./engine.mjs"
+        },
+        {
+          "path": "node_modules/fflate/esm/browser.js",
+          "kind": "import-statement",
+          "original": "fflate"
+        },
+        {
+          "path": "src/editor.mjs",
+          "kind": "import-statement",
+          "original": "./editor.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/worker.mjs": {
+      "bytes": 572,
+      "imports": [
+        {
+          "path": "src/workspace.mjs",
+          "kind": "import-statement",
+          "original": "./workspace.mjs"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "worker.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/worker.mjs",
+      "inputs": {
+        "node_modules/@bgotink/kdl/parser/tokenize/types.js": {
+          "bytesInOutput": 1002
+        },
+        "node_modules/@bgotink/kdl/parser/tokenize/context.js": {
+          "bytesInOutput": 1871
+        },
+        "node_modules/@bgotink/kdl/parser/tokenize/tokenize.js": {
+          "bytesInOutput": 5328
+        },
+        "node_modules/@bgotink/kdl/error.js": {
+          "bytesInOutput": 372
+        },
+        "node_modules/@bgotink/kdl/model/identifier.js": {
+          "bytesInOutput": 272
+        },
+        "node_modules/@bgotink/kdl/model/tag.js": {
+          "bytesInOutput": 437
+        },
+        "node_modules/@bgotink/kdl/model/value.js": {
+          "bytesInOutput": 502
+        },
+        "node_modules/@bgotink/kdl/model/entry.js": {
+          "bytesInOutput": 677
+        },
+        "node_modules/@bgotink/kdl/model/utils.js": {
+          "bytesInOutput": 56
+        },
+        "node_modules/@bgotink/kdl/model/node.js": {
+          "bytesInOutput": 2927
+        },
+        "node_modules/@bgotink/kdl/model/document.js": {
+          "bytesInOutput": 1356
+        },
+        "node_modules/@bgotink/kdl/model.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@bgotink/kdl/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@bgotink/kdl/locations.js": {
+          "bytesInOutput": 78
+        },
+        "node_modules/@bgotink/kdl/string-utils.js": {
+          "bytesInOutput": 904
+        },
+        "node_modules/@bgotink/kdl/parser/parse.js": {
+          "bytesInOutput": 1152
+        },
+        "node_modules/@bgotink/kdl/format.js": {
+          "bytesInOutput": 1798
+        },
+        "node_modules/@bgotink/kdl/parser/parse-v1.js": {
+          "bytesInOutput": 4932
+        },
+        "node_modules/@bgotink/kdl/parser/tokenize/tokenize-v1.js": {
+          "bytesInOutput": 2291
+        },
+        "node_modules/@bgotink/kdl/v1-compat.js": {
+          "bytesInOutput": 378
+        },
+        "src/engine.mjs": {
+          "bytesInOutput": 8035
+        },
+        "node_modules/fflate/esm/browser.js": {
+          "bytesInOutput": 9099
+        },
+        "src/workspace.mjs": {
+          "bytesInOutput": 2807
+        },
+        "src/worker.mjs": {
+          "bytesInOutput": 380
+        }
+      },
+      "bytes": 46666
+    }
+  }
+}

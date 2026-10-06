@@ -1,6 +1,6 @@
 
 > pane-weave@0.1.0 verify
-> npm run fixture && npm test
+> npm run fixture && npm run build && npm test
 
 
 > pane-weave@0.1.0 fixture
@@ -8,41 +8,55 @@
 
 Generated four ordinary KDL layouts and source maps; no commands run
 
+> pane-weave@0.1.0 build
+> node scripts/build-ui.mjs
+
+Self-contained offline HTML: 78238 bytes; bundled @bgotink/kdl, fflate
+
 > pane-weave@0.1.0 test
 > node --test tests/*.test.mjs
 
-✔ two projects assemble ordinary layouts with all original blocks intact (5.763873ms)
-✔ one shared edit changes both selected exports, original stays unchanged (2.25238ms)
-✔ reject missing module (0.907672ms)
-✔ reject duplicate module id (0.469124ms)
-✔ reject duplicate project id (0.494932ms)
-✔ reject duplicate selected module (0.368985ms)
-✔ reject duplicate template (0.483946ms)
-✔ reject duplicate default (0.540649ms)
-✔ reject missing template (0.541961ms)
-✔ reject cycle (0.675279ms)
-✔ reject pane-template size (0.644202ms)
-✔ reject multiple children (0.393031ms)
-✔ reject children in project (0.526809ms)
-✔ reject nested tab template (0.462224ms)
-✔ reject contents_file (0.443686ms)
-✔ reject unknown import node (0.5276ms)
-✔ reject duplicate property (0.515172ms)
-✔ reject duplicate property child (0.391028ms)
-✔ reject unsupported syntax tag (0.927822ms)
-✔ reject invalid KDL (1.834147ms)
-✔ reject too many modules (0.153437ms)
-✔ reject too many projects (0.167448ms)
-✔ exponential repeated references are bounded using occurrence counts (1.232032ms)
-✔ default template applications count toward expansion limit (1.505161ms)
-✔ source map counts all accepted KDL newline sequences while keeping bytes (3.410412ms)
-✔ input bytes and template count are bounded (2.632097ms)
-✔ unknown/repeated selections reject (2.35372ms)
-ℹ tests 27
+✔ two projects assemble ordinary layouts with all original blocks intact (6.895223ms)
+✔ one shared edit changes both selected exports, original stays unchanged (3.165018ms)
+✔ reject missing module (1.29947ms)
+✔ reject duplicate module id (0.680265ms)
+✔ reject duplicate project id (0.855174ms)
+✔ reject duplicate selected module (0.474321ms)
+✔ reject duplicate template (0.651202ms)
+✔ reject duplicate default (0.656ms)
+✔ reject missing template (1.636835ms)
+✔ reject cycle (1.206424ms)
+✔ reject pane-template size (1.343166ms)
+✔ reject multiple children (0.760614ms)
+✔ reject children in project (0.775937ms)
+✔ reject nested tab template (0.855655ms)
+✔ reject contents_file (0.606156ms)
+✔ reject unknown import node (0.612475ms)
+✔ reject duplicate property (0.604213ms)
+✔ reject duplicate property child (0.567519ms)
+✔ reject unsupported syntax tag (0.875634ms)
+✔ reject leading KDL BOM (0.194738ms)
+✔ reject invalid KDL (0.971266ms)
+✔ reject too many modules (0.2846ms)
+✔ reject too many projects (0.18916ms)
+✔ exponential repeated references are bounded using occurrence counts (1.660004ms)
+✔ default template applications count toward expansion limit (1.529691ms)
+✔ source map counts all accepted KDL newline sequences while keeping bytes (3.233219ms)
+✔ input bytes and template count are bounded (2.545012ms)
+✔ unknown/repeated selections reject (1.607567ms)
+✔ review ZIP contains only selected projects and required modules with exact KDL (11.289969ms)
+✔ review detects shared edit in both projects without mutating original (3.378378ms)
+✔ invalid edit fails atomically; declaration strings stay inert (2.323224ms)
+✔ editor retains uniform CRLF/CR source; mixed endings require JSON editing (0.572156ms)
+✔ actual bundled worker produces a valid safe-entry ZIP (94.475041ms)
+✔ single HTML embeds complete dependency notices and has no remote assets (0.982753ms)
+✔ oversized declaration review fails before producing a large DOM payload (39.935444ms)
+✔ normalized saved workspace must fit the same re-import byte bound (93.28729ms)
+ℹ tests 36
 ℹ suites 0
-ℹ pass 27
+ℹ pass 36
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 143.598557
+ℹ duration_ms 360.858027

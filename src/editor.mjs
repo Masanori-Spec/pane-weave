@@ -1,0 +1,2 @@
+export function editorView(text){const crlf=(text.match(/\r\n/g)||[]).length,bareCR=(text.match(/\r(?!\n)/g)||[]).length,bareLF=(text.match(/(?<!\r)\n/g)||[]).length;const mixed=[crlf,bareCR,bareLF].filter(Boolean).length>1;return {text:text.replace(/\r\n?/g,'\n'),ending:crlf?'\r\n':bareCR?'\r':'\n',mixed};}
+export function fromEditor(text,original){const view=editorView(original);if(view.mixed)throw Error('mixed-newlines-use-json');return text.replace(/\r\n?/g,'\n').replace(/\n/g,view.ending);}
