@@ -1,0 +1,30 @@
+name: Verify PaneWeave native layout equality
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  actual-zellij-parser:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run verify
+      - run: rustup toolchain install 1.98.1 --profile minimal
+      - run: python scripts/check-native-provenance.py
+      - name: Compile and run the real pinned layout parser
+        run: |
+          rustc +1.98.1 --version > evidence/rust-toolchain.txt
+          cargo +1.98.1 run --locked --manifest-path native/Cargo.toml > evidence/native-result.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-evidence
+          path: evidence/
+          if-no-files-found: error
